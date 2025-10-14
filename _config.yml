@@ -1,0 +1,14 @@
+title: "Marcos Verdejo Bosch"
+description: "Engineering portfolio — electronics, embedded systems, and networks."
+remote_theme: barryclark/jekyll-now
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+author:
+  name: "Marcos Verdejo Bosch"
+  email: contact@marcosverdejobosch.com
+  github: marcosverdejo
+  linkedin: marcosverdejobosch
+
+url: "https://marcosverdejo.github.io"
