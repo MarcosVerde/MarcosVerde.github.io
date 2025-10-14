@@ -19,7 +19,8 @@ title: Home
 
 # Marcos Verdejo Bosch
 
-Engineering portfolio in **hardware**, **embedded systems**, **IoT**, and **analog design**.  
-Portafolio de ingeniería: **hardware**, **embebidos**, **IoT** y **diseño analógico**.
+**Electronic Engineer** focused on **hardware design**, **embedded systems**, **IoT**, and **analog circuits**.
 
+This site showcases selected projects, notes, and build logs.  
 → [Projects](./projects) · [About](./about)
+
