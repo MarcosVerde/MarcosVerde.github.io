@@ -21,3 +21,7 @@ A selection of engineering work and experiments.
 - 🔧 **IoT Sensor Node** — low-power ESP32 board with firmware in C.  
 - 🧩 **Embedded Controller** — ARM-based board with real-time logic.  
 - 💡 **Lab Utilities** — small Python and C tools for hardware testing.
+
+  ---
+
+← [Home](./) · [About](./about)
