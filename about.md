@@ -21,3 +21,7 @@ I'm **Marcos Verdejo Bosch**, an **Electronic Engineer** focused on
 I enjoy creating reliable circuits and embedded solutions that bridge  
 the physical and digital worlds. My interests include **power regulation**,  
 **microcontrollers**, and **IoT system integration**.
+
+---
+
+← [Home](./) · [Projects](./projects)
