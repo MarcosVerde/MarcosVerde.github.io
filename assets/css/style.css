@@ -51,3 +51,44 @@ body {
   color: #666;
   margin: 2rem 0;
 }
+
+/* --------------------------------------------------------------
+   Custom dark theme override by Marcos Verdejo Bosch
+   Purpose: Apply consistent "terminal" aesthetic across the site
+   Font: Courier New  ·  Palette: dark background + neon accent
+   These rules layer over the remote_theme defaults (jekyll-now)
+   -------------------------------------------------------------- */
+
+:root {
+  --bg: #0d0d0d;
+  --fg: #eaeaea;
+  --accent: #33ff99;
+  --line: #1a1a1a;
+}
+
+html, body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: "Courier New", monospace;
+  line-height: 1.6;
+}
+
+/* Links */
+a { color: var(--fg); text-decoration: none; border-bottom: 1px dashed #555; }
+a:hover { color: var(--accent); border-bottom-color: var(--accent); }
+
+/* Headings */
+h1, h2, h3 { color: var(--accent); }
+
+/* Navbar and footer adjustments (if present) */
+.navbar {
+  background: #111;
+  border-bottom: 1px solid var(--line);
+}
+.footer {
+  text-align: center;
+  font-size: 0.85rem;
+  color: #999;
+  margin: 2rem 0;
+}
+
