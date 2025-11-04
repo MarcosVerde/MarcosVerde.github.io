@@ -80,6 +80,40 @@ a:hover { color: var(--accent); border-bottom-color: var(--accent); }
 /* Headings */
 h1, h2, h3 { color: var(--accent); }
 
+/* --------------------------------------------------------------
+   Header Banner — Marcos Verdejo Bosch personal site
+   -------------------------------------------------------------- */
+
+.site-header {
+  background-color: #0d0d0d;
+  text-align: center;
+  padding: 2.5rem 1rem 2rem;
+  border-bottom: 1px solid #1a1a1a;
+}
+
+.header-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.header-title {
+  color: #33ff99;
+  font-family: "Courier New", monospace;
+  font-weight: bold;
+  font-size: 1.8rem;
+  letter-spacing: 0.1rem;
+  margin: 0;
+}
+
+.header-tagline {
+  color: #eaeaea;
+  font-family: "Courier New", monospace;
+  font-size: 0.95rem;
+  margin-top: 0.5rem;
+  opacity: 0.9;
+}
+
+
 /* Navbar and footer adjustments (if present) */
 .navbar {
   background: #111;
