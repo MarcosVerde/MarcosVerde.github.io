@@ -1,128 +1,154 @@
-body {
-  margin: 0;
-  font-family: "Courier New", monospace;
-  background-color: #0d0d0d;
-  color: #eaeaea;
-}
-
-/* --- Navigation Bar --- */
-.navbar {
-  background-color: #111;
-  padding: 0.8rem 1.2rem;
-  border-bottom: 1px solid #222;
-}
-
-.nav-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-.nav-title {
-  font-weight: bold;
-  text-decoration: none;
-  color: #33ff99;
-}
-
-.nav-links a {
-  margin-left: 1rem;
-  text-decoration: none;
-  color: #eaeaea;
-}
-
-.nav-links a:hover {
-  color: #33ff99;
-}
-
-/* --- Main content --- */
-.content {
-  max-width: 800px;
-  margin: 3rem auto;
-  padding: 0 1rem;
-  line-height: 1.6;
-}
-
-/* --- Footer --- */
-.footer {
-  text-align: center;
-  font-size: 0.8rem;
-  color: #666;
-  margin: 2rem 0;
-}
-
 /* --------------------------------------------------------------
-   Custom dark theme override by Marcos Verdejo Bosch
-   Purpose: Apply consistent "terminal" aesthetic across the site
-   Font: Courier New  ·  Palette: dark background + neon accent
-   These rules layer over the remote_theme defaults (jekyll-now)
-   -------------------------------------------------------------- */
+   Global dark terminal theme (Ubuntu / modern Vim style)
+   Font: Courier New (monospace)
+   Palette: dark background, orange + green accents
+-------------------------------------------------------------- */
 
 :root {
-  --bg: #0d0d0d;
-  --fg: #eaeaea;
-  --accent: #33ff99;
-  --line: #1a1a1a;
+  --bg: #0b0c10;        /* main background */
+  --bg-alt: #161b22;    /* navbar / panels */
+  --fg: #e5e5e5;        /* primary text */
+  --muted: #8b949e;     /* secondary text */
+  --line: #262b33;      /* subtle borders */
+  --accent: #e95420;    /* Ubuntu orange */
+  --accent-alt: #98c379;/* Vim green */
 }
 
-html, body {
+/* Base layout */
+
+html,
+body {
+  margin: 0;
+  padding: 0;
   background: var(--bg);
   color: var(--fg);
   font-family: "Courier New", monospace;
   line-height: 1.6;
 }
 
+/* Main content area */
+
+.content,
+.container,
+.post,
+main {
+  max-width: 900px;
+  margin: 3rem auto;
+  padding: 0 1.25rem;
+}
+
 /* Links */
-a { color: var(--fg); text-decoration: none; border-bottom: 1px dashed #555; }
-a:hover { color: var(--accent); border-bottom-color: var(--accent); }
+
+a {
+  color: var(--accent-alt);
+  text-decoration: none;
+  border-bottom: 1px dotted transparent;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+a:hover {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+}
 
 /* Headings */
-h1, h2, h3 { color: var(--accent); }
 
-/* --------------------------------------------------------------
-   Header Banner — Marcos Verdejo Bosch personal site
-   -------------------------------------------------------------- */
-
-.site-header {
-  background-color: #0d0d0d;
-  text-align: center;
-  padding: 2.5rem 1rem 2rem;
-  border-bottom: 1px solid #1a1a1a;
+h1,
+h2,
+h3 {
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
 }
 
-.header-container {
+h1 {
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 0.4rem;
+  color: var(--accent-alt);
+}
+
+h2 {
+  color: var(--accent);
+}
+
+h3 {
+  color: var(--fg);
+}
+
+/* Paragraph spacing */
+
+p {
+  margin: 0.6rem 0;
+}
+
+/* Lists (for Projects page, etc.) */
+
+ul {
+  padding-left: 1.1rem;
+}
+
+li {
+  margin: 0.3rem 0;
+}
+
+/* Navbar - top status bar style */
+
+.navbar {
+  background: var(--bg-alt);
+  border-bottom: 1px solid var(--line);
+  padding: 0.7rem 1.2rem;
+}
+
+.nav-container {
   max-width: 900px;
   margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.header-title {
-  color: #33ff99;
-  font-family: "Courier New", monospace;
-  font-weight: bold;
-  font-size: 1.8rem;
-  letter-spacing: 0.1rem;
-  margin: 0;
+.nav-title {
+  font-weight: 700;
+  color: var(--accent);
+  text-decoration: none;
 }
 
-.header-tagline {
-  color: #eaeaea;
-  font-family: "Courier New", monospace;
-  font-size: 0.95rem;
-  margin-top: 0.5rem;
-  opacity: 0.9;
+.nav-links a {
+  margin-left: 1rem;
+  color: var(--fg);
+  border-bottom: none;
 }
 
-
-/* Navbar and footer adjustments (if present) */
-.navbar {
-  background: #111;
-  border-bottom: 1px solid var(--line);
+.nav-links a:hover,
+.nav-links a.active {
+  color: var(--accent-alt);
 }
+
+/* Footer */
+
 .footer {
   text-align: center;
   font-size: 0.85rem;
-  color: #999;
-  margin: 2rem 0;
+  color: var(--muted);
+  margin: 2.5rem 0;
 }
 
+/* Responsive tweaks */
+
+@media (max-width: 600px) {
+  .nav-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.4rem;
+  }
+
+  .nav-links a {
+    margin-left: 0.7rem;
+  }
+
+  .content,
+  .container,
+  .post,
+  main {
+    margin: 2rem auto;
+  }
+}
