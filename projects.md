@@ -24,20 +24,20 @@ A selection of engineering work and experiments.
 
 ---
 
-### ⚡ **[NOMBRE DEL PROYECTO]**  
-*Una línea que explique claramente qué hace el proyecto.*
+### ⚡ **Discrete Linear Voltage Regulator (5V / 3.3V)**  
+Analog, low-noise linear regulator designed from discrete components.
 
-**Stack:** `Hardware` · `Firmware` · `IoT` · `C/C++` · `KiCad`
+**Stack:** `Analog Design` · `KiCad` · `LTspice` · `Power Electronics`
 
-<img src="/assets/img/PROJECT_IMAGE.png" width="600"/>
+<img src="/assets/img/linear-regulator.png" width="600"/>
 
 **Highlights:**
-- ✓ Punto clave 1 (qué resolviste)
-- ✓ Punto clave 2 (lo más técnico / desafiante)
-- ✓ Punto clave 3 (resultado o mejora)
+- ✓ Ultra-low noise regulation using discrete BJT topology  
+- ✓ Full PCB design and layout optimized for thermal behavior  
+- ✓ Simulated in LTspice and tested on lab prototypes  
 
 **Links:**  
-[GitHub Repo](#) · [PDF/Docs](#)
+[GitHub Repo (soon)](#)
 
 ---
 ← [Home](./) · [About](./about)
