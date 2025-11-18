@@ -1,18 +1,18 @@
 /* --------------------------------------------------------------
-   Global dark theme (deep blue/violet background)
+   Global dark theme (deep indigo/violet)
    Font: Courier New (monospace)
-   Primary color: soft blue
-   Secondary accent: yellow-green, near neon but not full neon
+   Primary: soft bluish text
+   Accents: vivid blue + yellow-green (not full neon)
 -------------------------------------------------------------- */
 
 :root {
-  --bg: #050816;        /* main background: deep blue/violet */
-  --bg-alt: #0b1024;    /* navbar / panels */
-  --fg: #c4d9ff;        /* primary text: soft blue */
-  --muted: #8a94b0;     /* secondary text: desaturated blue/gray */
-  --line: #262b33;      /* subtle borders */
-  --accent: #5aa2ff;    /* primary accent: brighter blue (titles, nav brand) */
-  --accent-alt: #c5f36b;/* secondary accent: yellow-green, near neon */
+  --bg: #070918;        /* main background: very dark indigo */
+  --bg-alt: #101329;    /* navbar / panels: slightly lighter */
+  --fg: #d5ddff;        /* primary text: soft blue-white */
+  --muted: #8f96b5;     /* secondary text: desaturated blue/gray */
+  --line: #262b3a;      /* subtle borders */
+  --accent: #6f8dff;    /* primary accent: vivid but serious blue */
+  --accent-alt: #b8e66a;/* secondary accent: yellow-green, softened */
 }
 
 /* Base layout */
@@ -41,14 +41,14 @@ main {
 /* Links */
 
 a {
-  color: var(--accent-alt);               /* yellow-green */
+  color: var(--accent-alt);               /* yellow-green accent */
   text-decoration: none;
   border-bottom: 1px dotted transparent;
   transition: color 0.15s ease, border-color 0.15s ease;
 }
 
 a:hover {
-  color: var(--accent);                   /* brighter blue on hover */
+  color: var(--accent);                   /* blue on hover */
   border-bottom-color: var(--accent);
 }
 
@@ -115,7 +115,7 @@ li {
 
 .nav-links a {
   margin-left: 1rem;
-  color: var(--fg);                       /* soft blue text */
+  color: var(--fg);                       /* soft bluish text */
   border-bottom: none;
 }
 
