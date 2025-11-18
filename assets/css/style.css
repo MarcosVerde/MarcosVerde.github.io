@@ -1,17 +1,18 @@
 /* --------------------------------------------------------------
-   Global dark terminal theme (Ubuntu / modern Vim style)
+   Global dark theme (deep blue/violet background)
    Font: Courier New (monospace)
-   Palette: dark background, orange + green accents
+   Primary color: soft blue
+   Secondary accent: yellow-green, near neon but not full neon
 -------------------------------------------------------------- */
 
 :root {
-  --bg: #0b0c10;        /* main background */
-  --bg-alt: #161b22;    /* navbar / panels */
-  --fg: #e5e5e5;        /* primary text */
-  --muted: #8b949e;     /* secondary text */
+  --bg: #050816;        /* main background: deep blue/violet */
+  --bg-alt: #0b1024;    /* navbar / panels */
+  --fg: #c4d9ff;        /* primary text: soft blue */
+  --muted: #8a94b0;     /* secondary text: desaturated blue/gray */
   --line: #262b33;      /* subtle borders */
-  --accent: #e95420;    /* Ubuntu orange */
-  --accent-alt: #98c379;/* Vim green */
+  --accent: #5aa2ff;    /* primary accent: brighter blue (titles, nav brand) */
+  --accent-alt: #c5f36b;/* secondary accent: yellow-green, near neon */
 }
 
 /* Base layout */
@@ -40,14 +41,14 @@ main {
 /* Links */
 
 a {
-  color: var(--accent-alt);
+  color: var(--accent-alt);               /* yellow-green */
   text-decoration: none;
   border-bottom: 1px dotted transparent;
   transition: color 0.15s ease, border-color 0.15s ease;
 }
 
 a:hover {
-  color: var(--accent);
+  color: var(--accent);                   /* brighter blue on hover */
   border-bottom-color: var(--accent);
 }
 
@@ -63,11 +64,11 @@ h3 {
 h1 {
   border-bottom: 1px solid var(--line);
   padding-bottom: 0.4rem;
-  color: var(--accent-alt);
+  color: var(--accent);                   /* strong blue for main titles */
 }
 
 h2 {
-  color: var(--accent);
+  color: var(--accent-alt);               /* yellow-green for section titles */
 }
 
 h3 {
@@ -90,7 +91,7 @@ li {
   margin: 0.3rem 0;
 }
 
-/* Navbar - top status bar style */
+/* Navbar - top bar */
 
 .navbar {
   background: var(--bg-alt);
@@ -108,19 +109,19 @@ li {
 
 .nav-title {
   font-weight: 700;
-  color: var(--accent);
+  color: var(--accent);                   /* blue brand text */
   text-decoration: none;
 }
 
 .nav-links a {
   margin-left: 1rem;
-  color: var(--fg);
+  color: var(--fg);                       /* soft blue text */
   border-bottom: none;
 }
 
 .nav-links a:hover,
 .nav-links a.active {
-  color: var(--accent-alt);
+  color: var(--accent-alt);               /* yellow-green highlight */
 }
 
 /* Footer */
