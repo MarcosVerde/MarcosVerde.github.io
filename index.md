@@ -1,7 +1,9 @@
 ---
 layout: default
 title: Home
+class: home-page
 ---
+
 
 <!--
 File: index.md
