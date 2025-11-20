@@ -1,17 +1,27 @@
 /* --------------------------------------------------------------
-   Global dark theme (Rootloops palette v2)
-   Font: Hack (fallbacks to Liberation Mono / Consolas / Courier)
+   Rosé Pine theme (dark)
+   Font: Hack (fallbacks to monospace)
+   Palette from https://rosepinetheme.com
 -------------------------------------------------------------- */
 
 :root {
-  --bg: #1c241d;        /* background */
-  --bg-alt: #2e3a30;    /* navbar / panels */
-  --fg: #ccdace;        /* main text (foreground) */
-  --muted: #91a795;     /* secondary text */
-  --line: #506152;      /* subtle borders */
+  /* Rosé Pine core colors */
+  --bg: #191724;          /* base */
+  --bg-alt: #1f1d2e;      /* surface / navbar */
+  --fg: #e0def4;          /* text */
+  --muted: #908caa;       /* muted / secondary */
+  --line: #26233a;        /* subtle borders */
 
-  --accent: #b0c2f7;    /* primary accent: soft bright blue */
-  --accent-alt: #6be18a;/* secondary accent: fresh green */
+  --love: #eb6f92;
+  --gold: #f6c177;
+  --rose: #ebbcba;
+  --pine: #31748f;
+  --foam: #9ccfd8;
+  --iris: #c4a7e7;
+
+  /* Site accents */
+  --accent: var(--iris);  /* main accent: soft purple */
+  --accent-alt: var(--foam); /* secondary accent: cyan */
 }
 
 /* Base layout */
@@ -58,7 +68,7 @@ h2,
 h3 {
   margin-top: 2rem;
   margin-bottom: 0.75rem;
-  color: var(--fg);          /* same as main text */
+  color: var(--fg);  /* same tone as main text */
 }
 
 h1 {
@@ -104,11 +114,14 @@ li {
   align-items: center;
 }
 
+/* Top-left title (site.title) */
 .nav-title {
   font-weight: 700;
-  color: var(--accent);      /* brand text: blue */
+  color: var(--accent);   /* Rosé Pine iris */
   text-decoration: none;
 }
+
+/* Nav links */
 
 .nav-links a {
   margin-left: 1rem;
@@ -118,7 +131,7 @@ li {
 
 .nav-links a:hover,
 .nav-links a.active {
-  color: var(--accent-alt); /* active/hover: green */
+  color: var(--accent-alt); /* foam */
 }
 
 /* Home page: center main title */
