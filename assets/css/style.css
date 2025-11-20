@@ -1,27 +1,20 @@
 /* --------------------------------------------------------------
-   Rosé Pine theme (dark)
+   Dark theme using provided palette (Catppuccin-style)
+   Focus: high legibility (strong contrast)
    Font: Hack (fallbacks to monospace)
-   Palette from https://rosepinetheme.com
 -------------------------------------------------------------- */
 
 :root {
-  /* Rosé Pine core colors */
-  --bg: #191724;          /* base */
-  --bg-alt: #1f1d2e;      /* surface / navbar */
-  --fg: #e0def4;          /* text */
-  --muted: #908caa;       /* muted / secondary */
-  --line: #26233a;        /* subtle borders */
+  /* Base tones from the palette */
+  --bg: #11111b;        /* main background (darkest) */
+  --bg-alt: #181825;    /* navbar / panels */
+  --fg: #cdd6f4;        /* main text (very light) */
+  --muted: #9399b2;     /* secondary text */
+  --line: #313244;      /* borders / separators */
 
-  --love: #eb6f92;
-  --gold: #f6c177;
-  --rose: #ebbcba;
-  --pine: #31748f;
-  --foam: #9ccfd8;
-  --iris: #c4a7e7;
-
-  /* Site accents */
-  --accent: var(--iris);  /* main accent: soft purple */
-  --accent-alt: var(--foam); /* secondary accent: cyan */
+  /* Accents from the palette */
+  --accent: #89b4fa;    /* primary accent: bright blue */
+  --accent-alt: #a6e3a1;/* secondary accent: soft green */
 }
 
 /* Base layout */
@@ -50,14 +43,14 @@ main {
 /* Links */
 
 a {
-  color: var(--accent-alt);
+  color: var(--accent-alt);                     /* green, good contrast */
   text-decoration: none;
   border-bottom: 1px dotted transparent;
   transition: color 0.15s ease, border-color 0.15s ease;
 }
 
 a:hover {
-  color: var(--accent);
+  color: var(--accent);                         /* blue on hover */
   border-bottom-color: var(--accent);
 }
 
@@ -68,7 +61,7 @@ h2,
 h3 {
   margin-top: 2rem;
   margin-bottom: 0.75rem;
-  color: var(--fg);  /* same tone as main text */
+  color: var(--fg);                             /* same light text */
 }
 
 h1 {
@@ -114,10 +107,11 @@ li {
   align-items: center;
 }
 
-/* Top-left title (site.title) */
+/* Top-left title */
+
 .nav-title {
   font-weight: 700;
-  color: var(--accent);   /* Rosé Pine iris */
+  color: var(--accent);                         /* bright blue */
   text-decoration: none;
 }
 
@@ -131,7 +125,7 @@ li {
 
 .nav-links a:hover,
 .nav-links a.active {
-  color: var(--accent-alt); /* foam */
+  color: var(--accent-alt);                     /* green highlight */
 }
 
 /* Home page: center main title */
