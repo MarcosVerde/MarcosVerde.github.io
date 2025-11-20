@@ -1,10 +1,3 @@
----
-layout: default
-title: Home
-class: home-page
----
-
-
 <!--
 File: index.md
 Purpose: Main landing page for my personal site.
@@ -16,7 +9,17 @@ Notes:
 - Dark theme + Courier New to be added
 -->
 
+---
+layout: default
+title: Home
+class: home-page
+---
+
 # Marcos Verdejo Bosch
+
+<p class="home-subtitle">
+Electronic Engineer · Hardware · IoT · Firmware
+</p>
 
 **Electronic Engineer** focused on **hardware design**, **embedded systems**, **IoT**, and **analog circuits**.
 
@@ -29,3 +32,4 @@ This site serves as a space to document selected projects, experiments,
 and technical notes.
 
 → [Projects](./projects) · [About](./about)
+
