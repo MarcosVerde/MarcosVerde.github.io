@@ -6,6 +6,7 @@
   <title>{{ page.title }} | {{ site.title }}</title>
   {%- seo -%}
   <link rel="stylesheet" href="{{ "/assets/css/style.css?v=2" | relative_url }}">
+  
   <!--
   Site identity: favicon for browser tabs
   Style: Minimal MVB logo (neon green on dark background)
@@ -13,7 +14,8 @@
   -->
   <link rel="icon" href="{{ "/favicon-32x32.png" | relative_url }}" type="image/png">
 </head>
-<body>
+  
+<body class="{{ page.class }}">
 
   <!-- === Navigation Bar === -->
   <nav class="navbar">
