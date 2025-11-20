@@ -1,8 +1,6 @@
 /* --------------------------------------------------------------
    Global dark theme (Rootloops palette)
-   Font: Consolas (monospace-style, legible)
-   Background: #192036
-   Foreground: #cdd5eb
+   Font: Liberation Mono (fallbacks to Consolas / Courier New)
 -------------------------------------------------------------- */
 
 :root {
@@ -24,7 +22,7 @@ body {
   padding: 0;
   background: var(--bg);
   color: var(--fg);
-  font-family: Consolas, "Courier New", monospace;
+  font-family: "Liberation Mono", Consolas, "Courier New", monospace;
   line-height: 1.6;
 }
 
@@ -60,7 +58,7 @@ h2,
 h3 {
   margin-top: 2rem;
   margin-bottom: 0.75rem;
-  color: var(--fg);          /* same color as main text */
+  color: var(--fg);          /* same as main text */
 }
 
 h1 {
