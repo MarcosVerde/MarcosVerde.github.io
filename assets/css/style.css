@@ -1,15 +1,15 @@
 /* --------------------------------------------------------------
    Global dark theme (deep indigo/violet)
    Font: Consolas (monospace-style, more legible)
-   Primary: white text
+   Primary: warm off-white text
    Accents: vivid blue + yellow-green
 -------------------------------------------------------------- */
 
 :root {
   --bg: #070918;        /* main background: very dark indigo */
   --bg-alt: #101329;    /* navbar / panels */
-  --fg: #ffffff;        /* primary text: white */
-  --muted: #9ca2c0;     /* secondary text */
+  --fg: #f4f1e6;        /* primary text: warm off-white */
+  --muted: #b0a89a;     /* secondary text: soft beige/gray */
   --line: #262b3a;      /* subtle borders */
   --accent: #6f8dff;    /* primary accent: blue */
   --accent-alt: #b8e66a;/* secondary accent: yellow-green */
@@ -124,7 +124,7 @@ li {
   color: var(--accent-alt);
 }
 
-/* Home page title centered */
+/* Home page: center main title */
 
 .home-page h1 {
   text-align: center;
