@@ -1,7 +1,8 @@
 ---
-layout: page
+layout: default
 title: About
 ---
+
 
 <!--
 File: about.md
