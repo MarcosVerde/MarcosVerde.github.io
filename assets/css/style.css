@@ -8,14 +8,15 @@
   /* Base tones from the palette */
   --bg: #11111b;        /* main background (darkest) */
   --bg-alt: #181825;    /* navbar / panels */
-  --fg: #cdd6f4;        /* main text (very light) */
-  --muted: #9399b2;     /* secondary text */
+  --fg: #f5e0dc;        /* main text: lighter, almost white */
+  --muted: #bac2de;     /* secondary text: soft cool gray-blue */
   --line: #313244;      /* borders / separators */
 
   /* Accents from the palette */
   --accent: #89b4fa;    /* primary accent: bright blue */
   --accent-alt: #a6e3a1;/* secondary accent: soft green */
 }
+
 
 /* Base layout */
 
