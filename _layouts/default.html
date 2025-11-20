@@ -6,43 +6,20 @@
   <title>{{ page.title }} | {{ site.title }}</title>
   {%- seo -%}
   <link rel="stylesheet" href="{{ "/assets/css/style.css?v=2" | relative_url }}">
-  
-  <!--
-  Site identity: favicon for browser tabs
-  Style: Minimal MVB logo (neon green on dark background)
-  File: /favicon.ico
-  -->
-  <link rel="icon" href="{{ "/favicon-32x32.png" | relative_url }}" type="image/png">
 </head>
-  
 <body class="{{ page.class }}">
 
-  <!-- === Navigation Bar === -->
+  <!-- Top navigation bar -->
   <nav class="navbar">
     <div class="nav-container">
       <a href="{{ "/" | relative_url }}" class="nav-title">{{ site.title }}</a>
       <div class="nav-links">
-        <a href="{{ "/" | relative_url }}">Home</a>
-        <a href="{{ "/projects" | relative_url }}">Projects</a>
-        <a href="{{ "/about" | relative_url }}">About</a>
+        <a href="{{ "/" | relative_url }}" class="{% if page.url == "/" %}active{% endif %}">Home</a>
+        <a href="{{ "/projects" | relative_url }}" class="{% if page.url contains "/projects" %}active{% endif %}">Projects</a>
+        <a href="{{ "/about" | relative_url }}" class="{% if page.url contains "/about" %}active{% endif %}">About</a>
       </div>
     </div>
   </nav>
-
-  <!-- === Header Banner === -->
-  <!--
-  Header section for personal branding
-  Style: Terminal aesthetic (Courier New, neon green accent)
-  Appears on all pages — controlled via CSS (see style.css)
-  -->
-  <header class="site-header">
-    <div class="header-container">
-      <h1 class="header-title">MARCOS VERDEJO BOSCH</h1>
-      <p class="header-tagline">
-        Electronic Engineer · Hardware · IoT · Firmware
-      </p>
-    </div>
-  </header>
 
   <main class="content">
     {{ content }}
