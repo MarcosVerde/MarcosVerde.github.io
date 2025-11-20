@@ -59,7 +59,10 @@ h2,
 h3 {
   margin-top: 2rem;
   margin-bottom: 0.75rem;
-  color: var(--fg);          /* same warm off-white as body */
+  color: var(--fg);          /* same warm off-white as body text */
+}
+
+h1 {
   border-bottom: 1px solid var(--line);
   padding-bottom: 0.4rem;
 }
@@ -69,6 +72,7 @@ h3 {
   border-bottom: none;
   padding-bottom: 0;
 }
+
 
 
 /* Paragraph spacing */
