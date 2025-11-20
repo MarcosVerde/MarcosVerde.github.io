@@ -1,17 +1,17 @@
 /* --------------------------------------------------------------
-   Global dark theme (Rootloops palette)
+   Global dark theme (Rootloops palette v2)
    Font: Hack (fallbacks to Liberation Mono / Consolas / Courier)
 -------------------------------------------------------------- */
 
 :root {
-  --bg: #192036;        /* background */
-  --bg-alt: #2b3554;    /* navbar / panels */
-  --fg: #cdd5eb;        /* main text (foreground) */
-  --muted: #909fcc;     /* secondary text */
-  --line: #4b5987;      /* subtle borders */
+  --bg: #1c241d;        /* background */
+  --bg-alt: #2e3a30;    /* navbar / panels */
+  --fg: #ccdace;        /* main text (foreground) */
+  --muted: #91a795;     /* secondary text */
+  --line: #506152;      /* subtle borders */
 
-  --accent: #88b1e5;    /* primary accent: bright blue */
-  --accent-alt: #8ebf73;/* secondary accent: bright green */
+  --accent: #b0c2f7;    /* primary accent: soft bright blue */
+  --accent-alt: #6be18a;/* secondary accent: fresh green */
 }
 
 /* Base layout */
@@ -106,7 +106,7 @@ li {
 
 .nav-title {
   font-weight: 700;
-  color: var(--accent);      /* brand text: bright blue */
+  color: var(--accent);      /* brand text: blue */
   text-decoration: none;
 }
 
@@ -118,7 +118,7 @@ li {
 
 .nav-links a:hover,
 .nav-links a.active {
-  color: var(--accent-alt); /* active/hover: bright green */
+  color: var(--accent-alt); /* active/hover: green */
 }
 
 /* Home page: center main title */
