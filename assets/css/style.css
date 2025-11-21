@@ -7,15 +7,15 @@
 
 :root {
   /* Core Nord colors */
-  --bg: #2e3440;        /* polar night 1 – background */
-  --bg-alt: #3b4252;    /* polar night 2 – navbar/panels */
-  --fg: #eceff4;        /* snow storm 3 – main text (very light) */
-  --muted: #d8dee9;     /* snow storm 2 – secondary text */
-  --line: #4c566a;      /* polar night 4 – borders / separators */
+  --bg: #2e3440;
+  --bg-alt: #3b4252;
+  --fg: #eceff4;
+  --muted: #d8dee9;
+  --line: #4c566a;
 
   /* Accents */
-  --accent: #88c0d0;    /* frost – primary accent (links hover, brand) */
-  --accent-alt: #a3be8c;/* green – secondary accent */
+  --accent: #88c0d0;      /* blue */
+  --accent-alt: #b7d88f;  /* brighter green for tabs */
 }
 
 /* Base layout */
