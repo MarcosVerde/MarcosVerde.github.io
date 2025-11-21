@@ -1,21 +1,21 @@
 /* --------------------------------------------------------------
-   Gruvbox dark theme
-   Focus: high legibility, warm retro look
+   Nord theme (dark)
+   Focus: high legibility, calm blue/gray look
    Font: Ubuntu Mono
-   Palette: https://github.com/morhetz/gruvbox
+   Palette: https://www.nordtheme.com
 -------------------------------------------------------------- */
 
 :root {
-  /* Core gruvbox dark colors */
-  --bg: #282828;        /* background */
-  --bg-alt: #3c3836;    /* navbar / panels */
-  --fg: #ebdbb2;        /* main text (light, warm) */
-  --muted: #a89984;     /* secondary text */
-  --line: #504945;      /* borders / separators */
+  /* Core Nord colors */
+  --bg: #2e3440;        /* polar night 1 – background */
+  --bg-alt: #3b4252;    /* polar night 2 – navbar/panels */
+  --fg: #eceff4;        /* snow storm 3 – main text (very light) */
+  --muted: #d8dee9;     /* snow storm 2 – secondary text */
+  --line: #4c566a;      /* polar night 4 – borders / separators */
 
-  /* Gruvbox accents */
-  --accent: #fabd2f;    /* primary accent: yellow */
-  --accent-alt: #8ec07c;/* secondary accent: green */
+  /* Accents */
+  --accent: #88c0d0;    /* frost – primary accent (links hover, brand) */
+  --accent-alt: #a3be8c;/* green – secondary accent */
 }
 
 /* Base layout */
@@ -44,14 +44,14 @@ main {
 /* Links */
 
 a {
-  color: var(--accent-alt);                     /* green */
+  color: var(--accent-alt);                     /* green accent */
   text-decoration: none;
   border-bottom: 1px dotted transparent;
   transition: color 0.15s ease, border-color 0.15s ease;
 }
 
 a:hover {
-  color: var(--accent);                         /* yellow */
+  color: var(--accent);                         /* blue accent on hover */
   border-bottom-color: var(--accent);
 }
 
@@ -62,7 +62,7 @@ h2,
 h3 {
   margin-top: 2rem;
   margin-bottom: 0.75rem;
-  color: var(--fg);                             /* same as text */
+  color: var(--fg);                             /* same as main text */
 }
 
 h1 {
@@ -112,7 +112,7 @@ li {
 
 .nav-title {
   font-weight: 700;
-  color: var(--fg);                             /* same as main text */
+  color: var(--fg);                             /* mismo color que el texto principal */
   text-decoration: none;
 }
 
