@@ -8,8 +8,8 @@
   /* Base tones from the palette */
   --bg: #11111b;        /* main background (darkest) */
   --bg-alt: #181825;    /* navbar / panels */
-  --fg: #f5e0dc;        /* main text: lighter, almost white */
-  --muted: #bac2de;     /* secondary text: soft cool gray-blue */
+  --fg: #f5c2e7;        /* main text: brighter pale pink/white */
+  --muted: #f5c2e7;     /* secondary text pale pink/white */
   --line: #313244;      /* borders / separators */
 
   /* Accents from the palette */
@@ -112,9 +112,10 @@ li {
 
 .nav-title {
   font-weight: 700;
-  color: var(--accent);
+  color: var(--fg);     /* same color as main text */
   text-decoration: none;
 }
+
 
 /* Nav links */
 
