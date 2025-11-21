@@ -1,22 +1,22 @@
 /* --------------------------------------------------------------
-   Dark theme using provided palette (Catppuccin-style)
-   Focus: high legibility (strong contrast)
+   Gruvbox dark theme
+   Focus: high legibility, warm retro look
    Font: Ubuntu Mono
+   Palette: https://github.com/morhetz/gruvbox
 -------------------------------------------------------------- */
 
 :root {
-  /* Base tones from the palette */
-  --bg: #11111b;        /* main background (darkest) */
-  --bg-alt: #181825;    /* navbar / panels */
-  --fg: #f5c2e7;        /* main text: brighter pale pink/white */
-  --muted: #f5c2e7;     /* secondary text pale pink/white */
-  --line: #313244;      /* borders / separators */
+  /* Core gruvbox dark colors */
+  --bg: #282828;        /* background */
+  --bg-alt: #3c3836;    /* navbar / panels */
+  --fg: #ebdbb2;        /* main text (light, warm) */
+  --muted: #a89984;     /* secondary text */
+  --line: #504945;      /* borders / separators */
 
-  /* Accents from the palette */
-  --accent: #89b4fa;    /* primary accent: bright blue */
-  --accent-alt: #a6e3a1;/* secondary accent: soft green */
+  /* Gruvbox accents */
+  --accent: #fabd2f;    /* primary accent: yellow */
+  --accent-alt: #8ec07c;/* secondary accent: green */
 }
-
 
 /* Base layout */
 
@@ -44,14 +44,14 @@ main {
 /* Links */
 
 a {
-  color: var(--accent-alt);
+  color: var(--accent-alt);                     /* green */
   text-decoration: none;
   border-bottom: 1px dotted transparent;
   transition: color 0.15s ease, border-color 0.15s ease;
 }
 
 a:hover {
-  color: var(--accent);
+  color: var(--accent);                         /* yellow */
   border-bottom-color: var(--accent);
 }
 
@@ -62,7 +62,7 @@ h2,
 h3 {
   margin-top: 2rem;
   margin-bottom: 0.75rem;
-  color: var(--fg);
+  color: var(--fg);                             /* same as text */
 }
 
 h1 {
@@ -112,10 +112,9 @@ li {
 
 .nav-title {
   font-weight: 700;
-  color: var(--fg);     /* same color as main text */
+  color: var(--fg);                             /* same as main text */
   text-decoration: none;
 }
-
 
 /* Nav links */
 
@@ -127,7 +126,7 @@ li {
 
 .nav-links a:hover,
 .nav-links a.active {
-  color: var(--accent-alt);
+  color: var(--accent-alt);                     /* green highlight */
 }
 
 /* Home page: center main title */
