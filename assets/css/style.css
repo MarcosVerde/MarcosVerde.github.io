@@ -124,6 +124,13 @@ li {
   border-bottom: none;
 }
 
+/* Use Nord blue for hover/active tabs */
+.nav-links a:hover,
+.nav-links a.active {
+  color: var(--accent);   /* #88c0d0 */
+}
+
+
 .nav-links a:hover,
 .nav-links a.active {
   color: var(--accent-alt);                     /* green highlight */
